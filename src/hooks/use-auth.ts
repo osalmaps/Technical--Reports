@@ -23,6 +23,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   })
 
   useEffect(() => {
+    // Development mode: Skip authentication
+    setAuthState({ user: null, isLoading: false, error: null })
+    return
+
+    // Original auth code (commented out for development)
+    /*
     // Get initial session
     const getInitialSession = async () => {
       const { data: { session } } = await supabase.auth.getSession()
@@ -60,17 +66,29 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     )
 
     return () => subscription.unsubscribe()
+    */
   }, [])
 
   const signIn = async (email: string, password: string) => {
+    // Development mode: Mock sign in
+    return { error: null }
+    
+    // Original code (commented out)
+    /*
     const { error } = await supabase.auth.signInWithPassword({
       email,
       password
     })
     return { error }
+    */
   }
 
   const signUp = async (email: string, password: string, name?: string) => {
+    // Development mode: Mock sign up
+    return { error: null }
+    
+    // Original code (commented out)
+    /*
     const { error } = await supabase.auth.signUp({
       email,
       password,
@@ -81,10 +99,17 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
     })
     return { error }
+    */
   }
 
   const signOut = async () => {
+    // Development mode: Mock sign out
+    return
+    
+    // Original code (commented out)
+    /*
     await supabase.auth.signOut()
+    */
   }
 
   const value = {
