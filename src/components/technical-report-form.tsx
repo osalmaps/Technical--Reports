@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { Save, FileText, Download, Print, Spellcheck, X } from 'lucide-react'
+import { Save, FileText, Download, Printer, Check, X } from 'lucide-react'
 import { TechnicalReport, SFINode } from '@/types/sfi'
 
 interface TechnicalReportFormProps {
@@ -121,7 +121,7 @@ ${content}
               className="flex items-center gap-2 px-3 py-2 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-lg transition-colors"
               title="Check spelling"
             >
-              <Spellcheck className="w-4 h-4" />
+              <Check className="w-4 h-4" />
             </button>
             <button
               onClick={onCancel}
@@ -184,7 +184,7 @@ ${content}
               className="flex items-center gap-2 px-3 py-2 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-lg transition-colors"
               title="Print report"
             >
-              <Print className="w-4 h-4" />
+              <Printer className="w-4 h-4" />
             </button>
             
             <button

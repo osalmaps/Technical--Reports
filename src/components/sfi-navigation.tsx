@@ -110,11 +110,11 @@ export default function SFINavigation({ data, onNodeDoubleClick, className = '' 
                 {node.code}
               </span>
               <span className="text-sm">{node.name}</span>
+              {!hasChildren && (
+                <FileText className="w-4 h-4 text-gray-400" />
+              )}
             </div>
-            
-          {!hasChildren && (
-            <FileText className="w-4 h-4 text-gray-400" />
-          )}
+          </div>
         </div>
         
         {hasChildren && isExpanded && (
