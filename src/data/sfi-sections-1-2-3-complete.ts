@@ -41,7 +41,8 @@ export const sfiSections123Complete = {
       code: '4',
       name: 'SHIP EQUIPMENT, NAVIGATION & COMMUNICATION', 
       description: 'Complete ship handling equipment, navigation, and communication systems',
-      subsections: 45 // Sections 301, 321, 323, 331, 381, 382
+      subsections: 45 // Sections 401, 403, 404, 405, 408, 411, 412, 413, 414, 416, 417, 419, 421, 422, 423, 424, 425, 427, 431, 433, 434, 435, 436, 441, 442, 443, 444, 445, 446, 452, 453, 463, 464, 467, 484, 489, 491, 492, 493, 494, 495, 496, 497, 498, 499
+
   ],
   totalItems: 500, // Total individual SFI items across all sections
   maxDepth: 5, // Maximum hierarchy depth (e.g., 331.003.31.01.01)
