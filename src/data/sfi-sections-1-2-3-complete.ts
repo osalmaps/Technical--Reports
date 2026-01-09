@@ -37,6 +37,11 @@ export const sfiSections123Complete = {
       description: 'Complete cargo handling equipment, cranes, and safety systems',
       subsections: 6 // Sections 301, 321, 323, 331, 381, 382
     }
+     {
+      code: '4',
+      name: 'SHIP EQUIPMENT, NAVIGATION & COMMUNICATION', 
+      description: 'Complete ship handling equipment, navigation, and communication systems',
+      subsections: 45 // Sections 301, 321, 323, 331, 381, 382
   ],
   totalItems: 500, // Total individual SFI items across all sections
   maxDepth: 5, // Maximum hierarchy depth (e.g., 331.003.31.01.01)
